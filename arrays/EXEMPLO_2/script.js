@@ -8,7 +8,7 @@ let texto = input.value
 
 if(texto === ""){
 alert("Digite uma tarefa")
-return
+return 
 }
 
 // adiciona no array
