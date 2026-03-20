@@ -2,7 +2,7 @@
 let tarefas = []
 
 function adicionarTarefa(){ 
-
+ 
 let input = document.getElementById("tarefa")
 let texto = input.value
 
