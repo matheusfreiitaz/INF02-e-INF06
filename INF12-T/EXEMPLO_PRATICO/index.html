@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Systems - PDV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nexus Systems</h1>
+            <p>Desafio Instrutor Matheus Freitas - Turma INF12-T</p>
+        </header>
+
+        <main class="card">
+            <div class="input-group full">
+                <input type="text" id="cliente" placeholder="Nome do Cliente">
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <input type="number" id="valorUnitario" placeholder="Valor Unitário (R$)">
+                </div>
+                <div class="input-group">
+                    <select id="categoria">
+                        <option value="Hardware">Hardware</option>
+                        <option value="Software">Software</option>
+                        <option value="Serviços">Serviços</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <input type="number" id="quantidade" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="idProduto" placeholder="ID do Produto">
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="vip">
+                <label for="vip">Cliente VIP (Desconto especial)</label>
+            </div>
+
+            <button id="btnFinalizar" onclick="finalizarVenda()">Finalizar Venda</button>
+
+            <section class="stats">
+                <div class="stat-item border-blue">
+                    <span>TOTAL VENDAS</span>
+                    <h2 id="displayTotal">R$ 0,00</h2>
+                </div>
+                <div class="stat-item">
+                    <span>ESTOQUE</span>
+                    <h2 id="displayEstoque">500</h2>
+                </div>
+            </section>
+
+            <table id="tabelaVendas">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Cliente</th>
+                        <th>Qtd</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

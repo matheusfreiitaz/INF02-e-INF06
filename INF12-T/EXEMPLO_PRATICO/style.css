@@ -1,0 +1,212 @@
+/* Importando uma fonte mais moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-color: #0f111a;
+    --card-bg: #1a1d29;
+    --input-bg: #24283b;
+    --accent-color: #00d2ff;
+    --accent-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    --text-main: #ffffff;
+    --text-dim: #94a3b8;
+    --success: #10b981;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: radial-gradient(circle at 50% 0%, #1e293b 0%, #0f111a 100%);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilização dos Inputs */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px 18px;
+    background: var(--input-bg);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3a7bd5;
+    background: #2d334a;
+    box-shadow: 0 0 0 4px rgba(58, 123, 213, 0.2);
+}
+
+/* Checkbox Estilizado */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    color: var(--text-dim);
+    transition: var(--transition);
+}
+
+.checkbox-group:hover {
+    color: var(--text-main);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--accent-color);
+}
+
+/* Botão com Gradiente */
+button {
+    width: 100%;
+    padding: 16px;
+    background: var(--accent-gradient);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.4);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Stats (Dashboard) */
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    border-left: 4px solid transparent;
+}
+
+.stat-item.border-blue {
+    border-left-color: var(--accent-color);
+}
+
+.stat-item span {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-item h2 {
+    font-size: 1.6rem;
+    color: var(--text-main);
+}
+
+/* Tabela Profissional */
+table {
+    width: 100%;
+    margin-top: 2.5rem;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+th {
+    padding: 12px;
+    color: var(--text-dim);
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 16px 12px;
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 0.95rem;
+}
+
+td:first-child { border-radius: 8px 0 0 8px; }
+td:last-child { border-radius: 0 8px 8px 0; color: var(--accent-color); font-weight: 600; }
+
+tbody tr {
+    transition: var(--transition);
+}
+
+tbody tr:hover td {
+    background: rgba(255, 255, 255, 0.05);
+}
