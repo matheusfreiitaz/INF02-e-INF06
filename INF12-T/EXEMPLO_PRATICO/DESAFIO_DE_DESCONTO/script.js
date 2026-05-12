@@ -1,6 +1,6 @@
 // --- VARIÁVEIS GLOBAIS (Memória do Sistema) ---
 let totalVendasAcumulado = 0;
-let estoqueAtual = 500;
+let estoqueAtual = 500; 
 
 /**
  * FUNÇÃO PRINCIPAL: Executada ao clicar no botão
