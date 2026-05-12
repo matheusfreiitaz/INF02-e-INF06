@@ -32,7 +32,7 @@ function finalizarVenda() {
         totalVenda = totalVenda * 0.9; // Tira 10% do valor
     }
 
-    // --- 🏆 DESAFIO PARA OS ALUNOS ---
+    // ---  DESAFIO  ---
     // Implemente um IF aqui que dê 5% de desconto EXTRA 
     // se a quantidade (qtd) for maior ou igual a 10.
     // Dica: totalVenda = totalVenda * 0.95;
