@@ -7,7 +7,7 @@ let estoqueAtual = 500;
  */
 function finalizarVenda() {
     // 1. ENTRADA DE DADOS: Pegando informações do HTML 
-    const nomeCliente = document.getElementById('cliente').value;
+    const nomeCliente = document.getElementById('cliente').value;  
     const valorUnitario = parseFloat(document.getElementById('valorUnitario').value);
     const qtd = parseInt(document.getElementById('quantidade').value);
     const isVip = document.getElementById('vip').checked;
