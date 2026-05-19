@@ -2,7 +2,7 @@
 
 // Crie variáveis para:
 // possuiDinheiro
-// possuiCartao
+// possuiCartao 
 
 // O sistema deve verificar se: 
 // A pessoa possui dinheiro
