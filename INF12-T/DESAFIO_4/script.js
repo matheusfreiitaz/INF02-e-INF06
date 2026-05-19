@@ -4,7 +4,7 @@
 // possuiDinheiro
 // possuiCartao
 
-// O sistema deve verificar se:
+// O sistema deve verificar se: 
 // A pessoa possui dinheiro
 // OU possui cartão
 
